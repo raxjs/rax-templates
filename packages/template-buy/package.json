@@ -1,0 +1,41 @@
+{
+  "name": "template-buy",
+  "author": "yacheng.sz",
+  "version": "0.6.5",
+  "snapshots": [
+    "//img.alicdn.com/tfs/TB15xZ1QVXXXXcOapXXXXXXXXXX-1242-2013.jpg",
+    "//img.alicdn.com/tfs/TB1pYFCRXXXXXaYXpXXXXXXXXXX-1242-2012.jpg",
+    "//img.alicdn.com/tfs/TB1bxNdRXXXXXc1XVXXXXXXXXXX-1242-2018.jpg"
+  ],
+  "description": "表单类应用",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raxjs/template-buy.git"
+  },
+  "scripts": {
+    "start": "rax-scripts start",
+    "build": "rax-scripts build",
+    "lint": "eslint --ext .js --ext .jsx ./src"
+  },
+  "dependencies": {
+    "rax": "^0.6.4",
+    "rax-button": "^0.6.4",
+    "rax-link": "^0.6.4",
+    "rax-picker": "^0.6.4",
+    "rax-picture": "^0.6.4",
+    "rax-scrollview": "^0.6.4",
+    "rax-switch": "^0.6.4",
+    "rax-text": "^0.6.4",
+    "rax-textinput": "^0.6.4",
+    "rax-touchable": "^0.6.4",
+    "rax-view": "^0.6.4",
+    "universal-env": "^0.6.4",
+    "universal-panresponder": "^0.6.4"
+  },
+  "devDependencies": {
+    "rax-scripts": "^0.6.4-1",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.1",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}

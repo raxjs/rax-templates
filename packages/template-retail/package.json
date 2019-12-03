@@ -1,0 +1,33 @@
+{
+  "name": "template-retail",
+  "author": "gaohao",
+  "version": "0.7.0",
+  "snapshots": [
+    "https://cbu01.alicdn.com/cms/upload/2017/464/974/3479464_38443169.png",
+    "https://cbu01.alicdn.com/cms/upload/2017/944/964/3469449_38443169.jpg",
+    "https://cbu01.alicdn.com/cms/upload/2017/405/364/3463504_38443169.jpg",
+    "https://cbu01.alicdn.com/cms/upload/2017/404/074/3470404_38443169.jpg"
+  ],
+  "description": "零售通应用",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raxjs/template-retail.git"
+  },
+  "scripts": {
+    "start": "rax-scripts start",
+    "build": "rax-scripts build",
+    "lint": "eslint --ext .js --ext .jsx ./src"
+  },
+  "dependencies": {
+    "rax": "^0.6.4",
+    "rax-components": "^0.6.4",
+    "universal-env": "^0.6.4",
+    "universal-transition": "^0.6.4"
+  },
+  "devDependencies": {
+    "rax-scripts": "^0.6.4-1",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.1",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}

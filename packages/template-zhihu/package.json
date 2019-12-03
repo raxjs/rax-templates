@@ -1,0 +1,35 @@
+{
+  "name": "template-zhihu",
+  "author": "yacheng.sz",
+  "version": "0.7.0",
+  "snapshots": [
+    "https://gw.alicdn.com/tfs/TB1B9PPQXXXXXcNXVXXXXXXXXXX-300-200.png",
+    "https://gw.alicdn.com/tfs/TB1IvFAQXXXXXakXXXXXXXXXXXX-377-670.png",
+    "https://gw.alicdn.com/tfs/TB1sjJuQXXXXXc0XXXXXXXXXXXX-377-669.png"
+  ],
+  "description": "问答类应用",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raxjs/template-zhihu.git"
+  },
+  "scripts": {
+    "start": "rax-scripts start",
+    "build": "rax-scripts build",
+    "lint": "eslint --ext .js --ext .jsx ./src"
+  },
+  "dependencies": {
+    "rax": "^0.6.4",
+    "rax-icon": "^0.6.4",
+    "rax-image": "^0.6.4",
+    "rax-listview": "^0.6.4",
+    "rax-multirow": "^0.6.4",
+    "rax-text": "^0.6.4",
+    "rax-view": "^0.6.4"
+  },
+  "devDependencies": {
+    "rax-scripts": "^0.6.4-1",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.1",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}
