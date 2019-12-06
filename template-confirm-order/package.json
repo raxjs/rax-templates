@@ -6,7 +6,7 @@
     "start": "rax-scripts start"
   },
   "dependencies": {
-    "driver-universal": "^2.0.0",
+    "driver-universal": "^3.0.0",
     "rax": "^1.0.8",
     "rax-image": "^1.0.3",
     "rax-scrollview": "^1.1.4",
