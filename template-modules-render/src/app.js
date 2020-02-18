@@ -4,9 +4,9 @@ import listRender from '../packages/rax-recyclerview-render/src/index';
 import dataProcessor from '../packages/universal-data-processor/src/index';
 
 // mock data
-import mockFirstScreenData from '../mockData/firstScreenData';
-import mockFellowScreenData from '../mockData/fellowScreenData';
-import mockModules from '../mockData/modules';
+import mockFirstScreenData from './mockData/firstScreenData';
+import mockFellowScreenData from './mockData/fellowScreenData';
+import mockModules from './mockData/modules';
 
 class List extends listRender {
   constructor(config) {
