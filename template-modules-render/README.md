@@ -10,14 +10,6 @@ In real business scenarios, only business modules and data interfaces need to be
 ├── README.md 
 ├── build.json
 ├── package.json
-├── mockData                    # mock data
-│   ├── firstScreenData.js
-│   ├── fellowScreenData.js
-│   └── modules.js
-├── modules                    # business modules
-│   ├── CardA
-│   ├── CardB
-│   └── CardC
 ├── packages                    # modules render packages
 │   ├── rax-recyclerview-render
 │   ├── universal-data-loader
@@ -26,8 +18,16 @@ In real business scenarios, only business modules and data interfaces need to be
 └── src                         # page exampele
     ├── app.js                  
     ├── app.json                
-    └── document                
-        └── index.jsx       
+    ├── document                
+    │   └── index.jsx    
+    ├── mockData                # mock data
+    │   ├── firstScreenData.js
+    │   ├── fellowScreenData.js
+    │   └── modules.js
+    └── modules                 # business modules
+        ├── CardA
+        ├── CardB
+        └── CardC   
 ```
 
 ## Template Screenshot
