@@ -48,11 +48,11 @@ class App {
   beforeCreate() {
     // first screen data
     this.dataLoader.getFirstScreenData({device: this.device}).then((res) => {
-        this.updateData({
-          ...res.data.resultValue,
-        });
-        // fellow screen data
-        this.loadFellowScreenData(res.data.resultValue);
+      this.updateData({
+        ...res.data.resultValue,
+      });
+      // fellow screen data
+      this.loadFellowScreenData(res.data.resultValue);
     });
   }
 
