@@ -2,8 +2,8 @@ import fetch from './fetch';
 
 class dataLoader {
   constructor(config) {
-  	this.isFirstScreen = true;
-  	this.hasMoreModules = true;
+    this.isFirstScreen = true;
+    this.hasMoreModules = true;
     this.firstScreenConfig = config.firstScreenConfig;
     this.fellowScreenConfig = config.fellowScreenConfig;
   }
@@ -17,40 +17,40 @@ class dataLoader {
     });
   }
   getFirstScreenData(config) {
-  	return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       config = {
         ...this.firstScreenConfig,
         ...config,
         url: config.url || '',
       };
-  		this.request(config).then((res) => {
+      this.request(config).then((res) => {
         if (res && res.data && res.data.resultValue) {
           this.hasMoreModules = res.data.resultValue.hasMoreModules;
         }
-				this.isFirstScreen = false;
-      	resolve(res);
+        this.isFirstScreen = false;
+        resolve(res);
       }).catch((e) => {
-      	reject(e)
+        reject(e)
       });
-  	});
+    });
   }
   getFellowScreenData(config) {
     if (this.hasMoreModules) {
-	  	return new Promise((resolve, reject) => {
+      return new Promise((resolve, reject) => {
         config = {
           ...this.fellowScreenConfig,
           ...config,
           url: config.url || '',
         };
-	  		this.request(config).then((res) => {
+        this.request(config).then((res) => {
           if (res && res.data && res.data.resultValue) {
             this.hasMoreModules = res.data.resultValue.hasMoreModules;
           }
-	      	resolve(res);
-	      }).catch((e) => {
-	      	reject(e)
-	      });
-	  	});
+          resolve(res);
+        }).catch((e) => {
+          reject(e)
+        });
+      });
     }
   }
 }

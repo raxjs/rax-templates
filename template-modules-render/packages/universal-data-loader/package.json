@@ -1,7 +1,7 @@
 {
   "name": "universal-data-loader",
   "author": "rax",
-  "version": "0.0.1-beta.1",
+  "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
   "module": "src/index.js",
