@@ -2,6 +2,34 @@
 
 This is a data-driven module rendering scheme. Module developers do not care about the assembly of the whole page. The organization of the page depends on the data
 
+## Directory Structure
+
+In real business scenarios, only business modules and data interfaces need to be developed to complete page rendering.
+
+```
+├── README.md 
+├── build.json
+├── package.json
+├── mockData                    # mock data
+│   ├── firstScreenData.js
+│   ├── fellowScreenData.js
+│   └── modules.js
+├── modules                    # business modules
+│   ├── CardA
+│   ├── CardB
+│   └── CardC
+├── packages                    # modules render packages
+│   ├── rax-recyclerview-render
+│   ├── universal-data-loader
+│   ├── universal-data-processor
+│   └── universal-module-loader
+└── src                         # page exampele
+    ├── app.js                  
+    ├── app.json                
+    └── document                
+        └── index.jsx       
+```
+
 ## Template Screenshot
 
 ![](https://gw.alicdn.com/tfs/TB1xq7MvQL0gK0jSZFxXXXWHVXa-652-1146.png)
